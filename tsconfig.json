@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "dist",
+    "sourceMap": false,
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "allowJs": false,
+    "strict": true,
+    "noUnusedLocals": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "removeComments": false,
+    "lib": ["esnext"],
+    // import Controllers from 'virtual:controllers' で型が引っ張れるようにtype登録しておく
+    "types": ["node", "./esbuild-plugins/load-controllers/shims"],
+    "rootDir": ".",
+    "paths": {
+      "~/*": [
+        "./src/*"
+      ],
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

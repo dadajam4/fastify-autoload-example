@@ -1,0 +1,18 @@
+{
+  "name": "fastify-autoload-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsup --watch --onSuccess \"node dist/main.js\"",
+    "build": "tsup"
+  },
+  "dependencies": {
+    "fastify": "^4.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.0",
+    "tsup": "^6.6.3",
+    "typescript": "^4.9.5"
+  }
+}
